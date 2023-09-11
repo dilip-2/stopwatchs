@@ -1,0 +1,67 @@
+body{                  /*   body has been given display flex to center the container  */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   height: 100vh;
+   background-color: hsl(66, 80%, 51%);
+  }
+  .container {               /*container contains stopwach and buttons to items so display flex is been used to arrange the items*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #232344;
+    overflow: hidden;
+    height: 50%;
+    width: 75%;
+  }
+  
+  .stopwatch {                  /*stopwatch has three items minutes colon seconds to arrange this items we have use display flex property*/
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #15183A;
+    border-width: 2px ;
+    border-style: solid;
+    border-color:red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container p span{
+    color:white;
+    font-size: 100px;
+  }
+  .buttons{
+                                  /* all three buttons are horizontally arranged by display flex*/
+    width:40%;
+    margin:0 auto;
+   
+   
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  button{
+    margin: 0 5px;       /* these are some stylings done to buttons*/
+    height: 50px;
+    width:100px;
+    border-radius: 50px;
+    transition: all 1s;
+    font-size: large;
+    background-color: #232344;
+    cursor: pointer;
+    border:2px solid white;
+    color:white;
+  }
+  button:hover{
+    transform: translateY(-10%);  /*after hover the buttons tend to go somepixels upwards and opacity decreaes by 50 %*/
+    opacity: 50%;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
